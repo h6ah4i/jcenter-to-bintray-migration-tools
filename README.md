@@ -19,6 +19,7 @@ NOTE: I have tested this on Ubuntu Linux only. Pull requests are welcome :sweat_
      - `bash`
      - `ruby`
      - `wget`
+     - `gpg`
 2. Clone the repo
 3. `bundle install`
 
