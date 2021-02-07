@@ -105,11 +105,14 @@ https://issues.sonatype.org/secure/CreateIssue.jspa?issuetype=21&pid=10134
 
 After finishing your first release, close the JIRA ticket created in Step 5.
 
-### 8. Repeat Step 5-7
+### 8. Repeat Step 6
 
 Repeat and repeat again until (all of / enough) your artifacts available on Maven Central...
 
+Also, if your libraries have different group ID, you also have to repeat the Step 5 and 7.
+
 (I have not automated this process yet, because I do not have so many artifacts that need to be migrated.)
+
 
 ## References
 
