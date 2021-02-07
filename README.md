@@ -12,6 +12,10 @@ ref.) [Into the Sunset on May 1st: Bintray, JCenter, GoCenter, and ChartCenter](
 
 NOTE: I have tested this on Ubuntu Linux only. Pull requests are welcome :sweat_smile:
 
+---
+
+:point_right: [**本 README と内容はかなり被りますが日本語の解説記事も用意しました**](https://zenn.dev/h6ah4i/articles/57f82f6dea29e5)
+
 ## Setup
 
 1. Prerequisites
