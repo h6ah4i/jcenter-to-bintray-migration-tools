@@ -90,7 +90,7 @@ https://issues.sonatype.org/secure/CreateIssue.jspa?issuetype=21&pid=10134
 
 - Verify your domain with TXT record if you are using your own domain.
 
-### 6. Upload bundle to OSSRH Staging repository
+### 6. Upload bundle to OSSRH Staging repository  (all manually)
 
 1. Open the following page
     - https://oss.sonatype.org/#staging-upload
@@ -99,6 +99,15 @@ https://issues.sonatype.org/secure/CreateIssue.jspa?issuetype=21&pid=10134
   2. Select one of a `bunldle.jar` file created in Step 3.
   3. Press the `Upload Bundle` button
 3. Check the staging repository status and **Release** it if no problem found
+    - https://oss.sonatype.org/#stagingRepositories
+
+### 6. Upload bundle to OSSRH Staging repository  (upload programatically, release manually)
+
+1. Upload bundle
+  ```bash
+  ./upload_bundle_jar.sh -uSONATYPE_NEXUS_USERNAME -pSONATYPE_NEXUS_PASSWORD  path_of_bundle_jar_file
+  ```
+2. Check the staging repository status and **Release** it if no problem found
     - https://oss.sonatype.org/#stagingRepositories
 
 ### 7. Add a comment and close the JIRA ticket
