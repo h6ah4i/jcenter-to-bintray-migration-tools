@@ -32,6 +32,8 @@ done
 
 shift $((OPTIND - 1))
 
+BUNDLE="$1"
+
 if [[ "$SONATYPE_USER" = '' ]]; then
   echo 'User name is not specified' 1>&2
   usage_exit
@@ -42,7 +44,11 @@ if [[ "$SONATYPE_PASSWORD" = '' ]]; then
   usage_exit
 fi
 
-BUNDLE="$1"
+if [[ "$BUNDLE" = '' ]]; then
+  echo 'Artifact bundle file is not specified' 1>&2
+  usage_exit
+fi
+
 
 curl \
     --user "$SONATYPE_USER:$SONATYPE_PASSWORD" \
